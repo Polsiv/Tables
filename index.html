@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    
+<link rel="stylesheet" href="./styles.css">
+
+    <!-- table -> contains table
+        tr -> table row (builds a row)
+        td -> table data builds a cell)
+
+        number of cells inside tr sets the number of the table columns
+
+        colspan  for columns space
+        rowspan for row space
+    -->
+
+
+<h1>
+Tables
+</h1>
+
+<div class="container">
+    <table class="margin">
+    
+        <caption>Table title</caption>
+        <colgroup>
+        <col span="4">
+        <col>
+        
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>M</th>
+                <th>T</th>
+                <th>W</th>
+                <th>F</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+     <tr>
+         <td> 8:30-9:30</td>
+         <td rowspan="2">Maths</td>
+         <td>Media</td>
+         <td>Biology</td>
+         <td>English</td>
+     </tr>
+    
+     <tr>
+        <td> 8:30-9:30</td>
+        
+        <td>Media</td>
+        <td>Biology</td>
+        <td>English</td>
+    </tr>
+    
+    <tr>
+        <td> 8:30-9:30</td>
+        <td>Maths</td>
+        <td>Media</td>
+        <td>Biology</td>
+        <td>English</td>
+    </tr>
+    
+    <tr>
+        <td>2-9</td>
+        <td colspan="4">rest</td>
+    </tr>
+    
+    <tr>
+        <td> 8:30-9:30</td>
+        <td>Maths</td>
+        <td>Media</td>
+        <td>Biology</td>
+        <td>English</td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">No one cares</td>
+        </tr>
+    </tfoot>
+    </table>
+</div>
+
+
+<!-- Another one -->
+
+<div class="container">
+    <table>
+        <thead>
+            <caption>Ventajas y desventajas cirujano vs doctor</caption>
+        </thead>
+    
+        <tr>
+            <td></td>
+            <td class="color">Cirujano</td>
+            <td class="color">Doctor</td>
+        </tr>
+        <tr>
+            <td class="rgb">Ventajas</td>
+            <td> Versátil</td>
+            <td> Es repetitivo y repodrucible</td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td>Juicio clínico y experiencia</td>
+            <td>Estable y preciso</td>
+        </tr>
+        <tr>
+            
+            <td>Dexteridad manual a esala mm-cm</td>
+            <td>Diversos sensores, a escala <br>  micrón- mm</td>
+        </tr>
+        <tr>
+         
+            <td>Procesamiento rápido e integrado de <br> información cualtitativa</td>
+            <td>Maneja múltiples tareas cuantitativas</td>
+        </tr>
+        <tr>
+            <td class="rgb">Desventajas</td>
+            <td>Temblor</td>
+            <td>Caro</td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td>Fatiga</td>
+            <td>Complicado el "setup"</td>
+        </tr>
+        <tr>
+            
+            <td>Impreciso</td>
+            <td>Tamaño</td>
+        </tr>
+        <tr>
+            
+            <td>Estado emocional</td>
+            <td>No versátil</td>
+        </tr>
+        <tr>
+            <td>Inefectivo a escala sub mm</td>
+            <td>Tecnología aún en su infancia</td>
+        </tr>
+        
+    
+    </table>
+    
+</div>
+
+</body>
+</html>
